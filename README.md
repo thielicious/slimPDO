@@ -29,7 +29,7 @@ if (trait_exists("DB")) { // optional
 Now, instead of:
 ```
 $stmt = $this->pdo->prepare($sql);
-$stmt->execute([":param" => "value"]);
+$stmt->execute([":param" => $value]);
 ```
 Just do this:
 ```
