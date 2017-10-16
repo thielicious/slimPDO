@@ -14,7 +14,7 @@
 			
 			public function prep($sql, array $bind = null) {
 				$stmt = $this->prepare($sql);
-				$stmt->execute(($bind ? $bind : null));
+				$stmt->execute($bind);
 				return $stmt;
 			}
 			
