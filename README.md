@@ -46,7 +46,7 @@ foreach ($this->pdo->prep("SELECT * FROM `edit` WHERE `e_name` = :ev",
 <br>
 <br>
 
-###### Feel free to pull and edit, work whatever.
+###### Feel free to pull/edit/fork w/e.
 
 ---
 **[thielicious.github.io](http://thielicious.github.io)**
