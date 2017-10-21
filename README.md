@@ -37,7 +37,9 @@ $this->pdo->prep($sql,[":param" => $value]);
 ```
 Example:
 ```
-foreach ($this->pdo->prep("SELECT * FROM `edit` WHERE `e_name` = :ev",
+foreach ($this->pdo->prep(
+	"SELECT * FROM `edit` 
+	WHERE `e_name` = :ev",
 	[":ev" => $event]) as $ev) {
 	echo "<p>{$ev->e_content}</p>";
 }
