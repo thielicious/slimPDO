@@ -38,10 +38,10 @@ $this->pdo->prep($sql,[":param" => $value]);
 Example:
 ```
 foreach ($this->pdo->prep(
-	"SELECT * FROM `edit` 
-	WHERE `e_name` = :ev",
-	[":ev" => $event]) as $ev) {
-	echo "<p>{$ev->e_content}</p>";
+	"SELECT * FROM `members` WHERE `usr_name` = :name",
+	[":name" => $username]
+	) as $user) {
+	echo "<p>{$user->usr_id}</p>";
 }
 ```
 
