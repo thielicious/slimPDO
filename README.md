@@ -41,7 +41,7 @@ foreach ($this->pdo->prep(
 	"SELECT * FROM `members` WHERE `usr_name` = :name",
 	[":name" => $username]
 	) as $user) {
-	echo "<p>{$user->usr_id}</p>";
+	return $user->usr_id;
 }
 ```
 
