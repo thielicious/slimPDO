@@ -44,6 +44,7 @@ foreach ($this->pdo->prep(
 	return $user->usr_id;
 }
 ```
+This extension can be used as a callback hence very useful in loops. No separate declaration needed.
 
 <br>
 <br>
